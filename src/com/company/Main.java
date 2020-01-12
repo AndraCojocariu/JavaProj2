@@ -34,6 +34,7 @@ public class Main {
         int c = 5;
         int d = 8;
         System.out.println(a+((b*c)/d));
+
     }
 }
 
