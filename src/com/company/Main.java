@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Restul impartirii celor doua nr este: " + modulo(84, 12.3f));
         System.out.println("Temperatura in grade celsius este: " + temperature(130.4f));
         System.out.println("228.5 inch reprezinta: " + distance(228.5f) + " m");
-
+        speed(124.5f, 20.4f, 45.4f, 43.3f);
 
 
     }
@@ -72,20 +72,21 @@ public class Main {
     }
 
     //ex 3
-    public static void printThis(){
-        System.out.println    ("   J     a    v     v  a");
-        System.out.println    ("   J   a   a   v   v  a a");
+    public static void printThis() {
+        System.out.println("   J     a    v     v  a");
+        System.out.println("   J   a   a   v   v  a a");
         System.out.println("J  J   aaaaa    V V  aaaaa");
-        System.out.println  (" JJ   a     a    V  a     a");
+        System.out.println(" JJ   a     a    V  a     a");
     }
     //ex 4
 
-    public static float average(float no1, int no2, float no3){
-        float result2 = (no1 + no2 + no3) /3;
+    public static float average(float no1, int no2, float no3) {
+        float result2 = (no1 + no2 + no3) / 3;
         return result2;
     }
+
     //ex 5
-    public static void printThisModel(){
+    public static void printThisModel() {
         System.out.println("    +'' '' '' '' ''+ ");
         System.out.println(" [  |  o       o   | ]");
         System.out.println("    |      ^       |");
@@ -96,19 +97,20 @@ public class Main {
     //sigur exista o metoda de a scrie cod pentru modelele astea, probably some kind of pattern code
 
     //ex 6
-    public static float modulo(int no4, float no5){
+    public static float modulo(int no4, float no5) {
         float result3 = no4 % no5;
         return result3;
     }
+
     //ex 7
-    public static double temperature(float fahrenheitDegree){
+    public static double temperature(float fahrenheitDegree) {
         double celsiusDegree = ((5 * (fahrenheitDegree - 32.0)) / 9);
         return celsiusDegree;
     }
 
     //ex 8
     //one inch = 0.0254 meter
-    public static float distance(float inch){
+    public static float distance(float inch) {
         float meters = inch * 0.0254f;
         return meters;
     }
@@ -117,12 +119,20 @@ public class Main {
     1mile = 1609m
      */
 
-   /* public static float speed (float meters, int hours, int minutes, int seconds){
-        float timePerSec = (hours * 3600) + (minutes * 60) + seconds;
-        return timePerSec;
+    /* public static float speed (float meters, int hours, int minutes, int seconds){
+         float timePerSec = (hours * 3600) + (minutes * 60) + seconds;
+         return timePerSec;
 
+     }
+     */
+    public static void speed(float meters, float hours, float minutes, float seconds) {
+        float speed1 = meters / (seconds + minutes * 60 + hours * 3600);
+        float speed2 = (meters / 1000) / (hours + minutes / 60 + seconds / 3600);
+        float speed3 = (meters / 1609) / (hours + minutes / 60 + seconds / 3600);
+        System.out.println(speed1);
+        System.out.println(speed2);
+        System.out.println(speed3);
     }
-    */
 }
 
 
