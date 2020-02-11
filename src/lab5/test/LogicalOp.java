@@ -99,6 +99,27 @@ public class LogicalOp {
     }
 
      */
+    //ex 8 refacut
+
+   /* public int[] returnNewArray (int[] array, int number){
+        boolean found = false;
+        int [] newArray = new int [array.length-1];
+                for (int i = 0; i< array.length; i++){
+                    if (found){
+                        newArray[i-1] =array[i];
+                    }
+                    if (array[i] ! = number){
+                        newArray[i] = array[i];
+                    }
+                    else {
+                        found = true
+                        continue;
+                    }
+                }
+                return newArray;
+    }
+
+    */
 
     //ex 9
 
@@ -128,5 +149,126 @@ public class LogicalOp {
         return copyArray;
     }
 
+    // Tema optionala Java Arrays
 
-}
+    //ex 1 - acelasi cu ex 9 din tema anterioara de la Arrays
+
+
+    public int returnMethodBlaBla (int[] array){
+        int number;
+        for (int i = 0; i <array.length; i++){
+            for (int j = i+1; j < array.length; j++){
+                if(array[i] > array[j]){
+                    number = array[i];
+                    array[i] = array[j];
+                    array[j] = number;
+
+                }
+            }
+        }
+        return array[1];
+    }
+
+    //ex 2 - Tema optionala Arrays
+
+    public int[] anotherMethod(int [] array, int number, int index){
+        int [] result = new int [array.length + 1];
+        for (int i = 0, j = 0; i <array.length; i++, j++){
+            if (i == index) {
+                result[j] = number;
+                j++;
+            }
+            result [j] = array[i];
+
+        }
+        return result;
+    }
+
+    //ex 3 - Tema optionala Arrays
+
+    public void findMyNumbers (int[] array){
+        int max = array[0];
+        int min = array[0];
+
+        for (int i = 1; i <array.length; i++){
+            if(array[i] > max)
+                max = array[i];
+
+            if (array[i] < min)
+                min = array[i];
+            }
+
+        System.out.println("The largest number from the array is: " + max);
+        System.out.println("The smallest number from the array is : " + min);
+
+        }
+
+        //ex 4 - tema optionala Array
+
+        public int[] reverseNumbers (int[] array) {
+
+            int[] newArray = new int[array.length];
+            for (int i = 0; i < array.length; i++) {
+                newArray[array.length - 1 - i] = array[i];
+
+            }
+            return newArray;
+        }
+
+        //ex 5 - tema optionala Array
+
+        public void findDuplicateNo (int [] array){
+            for (int i = 0; i<array.length; i++){
+                for (int j = i + 1; j <array.length; j++){
+                    if (array[i] == array[j]){
+                        System.out.println("Duplicate elements in the given array are: " + array[j]);
+
+                        }
+                    }
+                }
+
+            }
+
+        //ex 6 - tema optionala Array
+
+        public void returnSameStrings (String [] array, String [] array2){
+        for (int i = 0; i<array.length; i++){
+            for (int j = 0; j< array2.length; j++){
+                if (array[i].equals(array2[j])){
+                    System.out.println(array[i]);
+                }
+            }
+        }
+        }
+
+
+        //ex 7 - tema optionala Array
+
+        public int [] sortAsc (int[] array){
+        for (int i = 0; i <array.length; i++){
+            for (int j = i+1; j <= array.length-1; j++){
+              if(array[i] > array[j]){
+                  int temp = array[i];
+                  array[i] = array[j];
+                  array[j] = temp;
+              }
+                System.out.println(array[i]);
+            }
+        }
+        return array;
+        }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

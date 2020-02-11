@@ -62,11 +62,49 @@ public class Main{
         int [] anArray9 = op.returnMethod5(anArray8, anEmptyArray);
         op.printArray(anArray9);
 
+        //ex 1 - tema optionala Array
+
+        int [] anArrayExercise = {24, 59, 20, 2};
+        int aValue = op.returnMethodBlaBla(anArrayExercise);
+        System.out.println(aValue);
 
 
 
+        //ex 2 - tema optionala Array
 
+        int [] anArray10 = {14, 146, 23, 55};
+        int [] anArray11 = op.anotherMethod(anArray10, 100, 2);
+        for (int i = 0; i<anArray11.length; i++){
+            System.out.println(anArray11[i]);
 
+        }
+
+        //ex 3 - tema optionala Array
+
+        int [] anArray12 = {10, 50000, 5, 230, 40494};
+        op.findMyNumbers(anArray12);
+
+        //ex 8 - refacut
+
+        //ex 4 - tema optionala Array
+
+        int [] anArray13 = {12, 50, 222, 47, 10, 2};
+        op.printArray(op.reverseNumbers(anArray13));
+
+        //ex 5 - tema optionala Array
+
+        int [] anArray14 = {12, 44, 56, 44, 16, 16, 28, 4, 12};
+        op.findDuplicateNo(anArray14);
+
+        //ex 6 - tema optionala Array
+
+        String [] anArray15 = {"Hello", "Deja-vu", "Common", "Hi" };
+        String [] anArray16 = {"Ce faci?", "Lalala", "Hi", "Hello"};
+        op.returnSameStrings(anArray15, anArray16);
+
+        //ex 7 - tema optionala Array
+        int [] anArray17 = {12, 4, 15, 64, 34, 2};
+        op.printArray(op.sortAsc(anArray17));
 
 
     }
